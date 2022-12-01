@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name"></string>
+    <string name="button_pageone">Weiter</string>
+    <string name="button_pagetwo">Weiter</string>
+    <string name="button_pagethree">Weiter</string>
+    <string name="content_descr_cartoon_image">cartoon image</string>
+</resources>
