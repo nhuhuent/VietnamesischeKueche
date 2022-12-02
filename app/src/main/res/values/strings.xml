@@ -1,7 +1,18 @@
 <resources>
     <string name="app_name"></string>
     <string name="button_pageone">Weiter</string>
-    <string name="button_pagetwo">Weiter</string>
+    <string name="button_s">Spezialität</string>
+    <string name="button_n">Nudeln</string>
+    <string name="button_r">Reis</string>
+    <string name="button_v">Vegetarisch</string>
     <string name="button_pagethree">Weiter</string>
     <string name="content_descr_cartoon_image">cartoon image</string>
+    <string name="textview_p2">Vietnamesische Küche</string>
+    <string name="search_p2"> Search...</string>
+    <string name="search_p3"> Bitte Gerichte eingeben</string>
+    <string name="textview1">Spezialitäte Gerichte</string>
+    <string name="textview2">Nudel Gerichte</string>
+    <string name="textview3">Reis Gerichte</string>
+    <string name="textview4">Vegetarische Gerichte</string>
+
 </resources>
