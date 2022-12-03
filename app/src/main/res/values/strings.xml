@@ -14,5 +14,27 @@
     <string name="textview2">Nudel Gerichte</string>
     <string name="textview3">Reis Gerichte</string>
     <string name="textview4">Vegetarische Gerichte</string>
+    <string name="textview5">Vietnamesische Küche</string>
+    <string name="title_activity_nudeln">Nudeln_Activity</string>
+
+    <string name="reis_boluclac">Bò Lúc Lắc</string>
+    <string name="reis_canhchuanamchay">Canh Chua Nấm Chay</string>
+    <string name="reis_comchienduongchau">Cơm Chiên Dương Châu</string>
+    <string name="reis_comgaluoc">Cơm Gà Luộc</string>
+    <string name="reis_comvitquay">Cơm Vịt Quay</string>
+    <string name="reis_dauhurimtom">Đậu Hũ Rim Tôm</string>
+    <string name="reis_dauhusotca">Đậu Hũ Sốt Cà</string>
+    <string name="reis_gakhosaot">Gà Kho Sả Ớt</string>
+    <string name="reis_comtam">Cơm Tấm</string>
+    <string name="reis_weiter">Weiter</string>
+
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 
 </resources>

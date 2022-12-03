@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Reis_Activity">
+
+    <ImageView
+        android:id="@+id/bild_boluclac"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reis_comtam"
+        app:srcCompat="@drawable/boluclac" />
+
+    <ImageView
+        android:id="@+id/bild_canhchuanamchay"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="27dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toEndOf="@+id/bild_comvitquay"
+        app:layout_constraintTop_toBottomOf="@+id/reis_comchienduongchau"
+        app:srcCompat="@drawable/canhchuanamchay" />
+
+    <ImageView
+        android:id="@+id/bild_comchienduongchau"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="26dp"
+        app:layout_constraintStart_toEndOf="@+id/bild_comgaluoc"
+        app:layout_constraintTop_toBottomOf="@+id/reis_dauhutomrim"
+        app:srcCompat="@drawable/comchienduongchau" />
+
+    <ImageView
+        android:id="@+id/bild_comgaluoc"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toEndOf="@+id/bild_boluclac"
+        app:layout_constraintTop_toBottomOf="@+id/reis_gakhosaot"
+        app:srcCompat="@drawable/comgaluoc" />
+
+    <ImageView
+        android:id="@+id/bild_comtam"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/comtam" />
+
+    <ImageView
+        android:id="@+id/bild_comvitquay"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toEndOf="@+id/bild_dauhusotca"
+        app:layout_constraintTop_toBottomOf="@+id/reis_comgaluoc"
+        app:srcCompat="@drawable/comvitquay" />
+
+    <ImageView
+        android:id="@+id/bild_dauhurimtom"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="27dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.719"
+        app:layout_constraintStart_toEndOf="@+id/bild_gakhosaot"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/dauhurimtom" />
+
+    <ImageView
+        android:id="@+id/bild_dauhusotca"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reis_boluclac"
+        app:srcCompat="@drawable/dauhusotca" />
+
+    <ImageView
+        android:id="@+id/bild_gakhosaot"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toEndOf="@+id/bild_comtam"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/gakhosaot" />
+
+    <TextView
+        android:id="@+id/reis_comtam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/alice"
+        android:text="@string/reis_comtam"
+        android:textColor="@color/teal_700"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bild_comtam" />
+
+    <TextView
+        android:id="@+id/reis_gakhosaot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/alice"
+        android:text="@string/reis_gakhosaot"
+        android:textColor="@color/teal_700"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/reis_comtam"
+        app:layout_constraintTop_toBottomOf="@+id/bild_gakhosaot" />
+
+    <TextView
+        android:id="@+id/reis_dauhutomrim"
+        android:layout_width="84dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="28dp"
+        android:fontFamily="@font/alice"
+        android:text="@string/reis_dauhurimtom"
+        android:textColor="@color/teal_700"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/reis_gakhosaot"
+        app:layout_constraintTop_toBottomOf="@+id/bild_dauhurimtom" />
+
+    <TextView
+        android:id="@+id/reis_boluclac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/alice"
+        android:text="@string/reis_boluclac"
+        android:textColor="@color/teal_700"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bild_boluclac" />
+
+    <TextView
+        android:id="@+id/reis_comgaluoc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/alice"
+        android:text="@string/reis_comgaluoc"
+        android:textColor="@color/teal_700"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/reis_boluclac"
+        app:layout_constraintTop_toBottomOf="@+id/bild_comgaluoc" />
+
+    <TextView
+        android:id="@+id/reis_comchienduongchau"
+        android:layout_width="108dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="4dp"
+        android:fontFamily="@font/alice"
+        android:text="@string/reis_comchienduongchau"
+        android:textColor="@color/teal_700"
+        android:textSize="16sp"
+
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.764"
+        app:layout_constraintStart_toEndOf="@+id/reis_comgaluoc"
+        app:layout_constraintTop_toBottomOf="@+id/bild_comchienduongchau" />
+
+    <TextView
+        android:id="@+id/reis_dauhusotca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/alice"
+        android:text="@string/reis_dauhusotca"
+        android:textColor="@color/teal_700"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bild_dauhusotca" />
+
+    <TextView
+        android:id="@+id/reis_comvitquay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/alice"
+        android:text="@string/reis_comvitquay"
+        android:textColor="@color/teal_700"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/reis_dauhusotca"
+        app:layout_constraintTop_toBottomOf="@+id/bild_comvitquay" />
+
+    <TextView
+        android:id="@+id/reis_canhchuanamchay"
+        android:layout_width="91dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="18dp"
+        android:fontFamily="@font/alice"
+        android:text="@string/reis_canhchuanamchay"
+        android:textColor="@color/teal_700"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/reis_comvitquay"
+        app:layout_constraintTop_toBottomOf="@+id/bild_canhchuanamchay" />
+
+    <Button
+        android:id="@+id/reis_weiter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reis_weiter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reis_comvitquay" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

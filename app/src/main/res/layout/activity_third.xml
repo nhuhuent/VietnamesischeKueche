@@ -22,7 +22,6 @@
         app:startIconDrawable="@drawable/ic_baseline_search_24"
         tools:ignore="MissingConstraints">
 
-
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/editSearch_p3"
             android:layout_width="match_parent"

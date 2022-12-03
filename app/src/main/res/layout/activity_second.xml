@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/hintergrund16"
-    tools:context=".SecondActivity">
+    tools:context=".SecondActivity"
+    tools:ignore="ExtraText">
 
     <ImageView
         android:id="@+id/imageView13"
@@ -14,10 +15,28 @@
         android:layout_marginBottom="8dp"
         android:padding="10dp"
         app:layout_constraintBottom_toTopOf="@+id/imageView14"
-        app:layout_constraintEnd_toStartOf="@+id/buttonSecondPage"
+        app:layout_constraintEnd_toStartOf="@+id/nudelnButton"
         app:layout_constraintHorizontal_bias="0.333"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/nudeln" />
+
+    <TextView
+        android:id="@+id/title_app"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/alice"
+        android:text="@string/textview5"
+        android:textAllCaps="true"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/reisButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.278" />
 
     <ImageView
         android:id="@+id/imageView14"
@@ -26,7 +45,7 @@
         android:layout_marginBottom="8dp"
         android:padding="10dp"
         app:layout_constraintBottom_toTopOf="@+id/imageView15"
-        app:layout_constraintEnd_toStartOf="@+id/buttonSecondPage2"
+        app:layout_constraintEnd_toStartOf="@+id/spezialitaetButton"
         app:layout_constraintHorizontal_bias="0.328"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/spezialitaet" />
@@ -38,13 +57,13 @@
         android:layout_marginBottom="4dp"
         android:padding="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/buttonSecondPage2_3"
+        app:layout_constraintEnd_toStartOf="@+id/vegetarischButton"
         app:layout_constraintHorizontal_bias="0.304"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/vegetarisch" />
 
     <Button
-        android:id="@+id/buttonSecondPage2_3"
+        android:id="@+id/vegetarischButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="24dp"
@@ -60,7 +79,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/buttonSecondPage2"
+        android:id="@+id/spezialitaetButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="68dp"
@@ -70,13 +89,13 @@
         android:textColor="@color/white"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/buttonSecondPage2_3"
+        app:layout_constraintBottom_toTopOf="@+id/vegetarischButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.816"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/buttonSecondPage"
+        android:id="@+id/nudelnButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="60dp"
@@ -86,13 +105,13 @@
         android:textColor="@color/white"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/buttonSecondPage2"
+        app:layout_constraintBottom_toTopOf="@+id/spezialitaetButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.682"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/buttonSecondPage2_2"
+        android:id="@+id/reisButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="40dp"
@@ -102,7 +121,7 @@
         android:textColor="@color/white"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/buttonSecondPage"
+        app:layout_constraintBottom_toTopOf="@+id/nudelnButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.606"
         app:layout_constraintStart_toStartOf="parent"
@@ -115,7 +134,7 @@
         android:layout_height="wrap_content"
         android:padding="10dp"
         app:layout_constraintBottom_toTopOf="@+id/imageView13"
-        app:layout_constraintEnd_toStartOf="@+id/buttonSecondPage2_2"
+        app:layout_constraintEnd_toStartOf="@+id/reisButton"
         app:layout_constraintHorizontal_bias="0.3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
