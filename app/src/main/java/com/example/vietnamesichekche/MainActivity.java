@@ -3,14 +3,9 @@ package com.example.vietnamesichekche;
 
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.SearchView;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
 import android.widget.ImageView;
 
 import java.util.Timer;
@@ -20,12 +15,11 @@ public class MainActivity extends AppCompatActivity {
 
     Timer timer;
     ImageView imageView;
-    //Button buttonOne;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.main_activity);
         // fullscreen to do
         // getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
@@ -34,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         timer.schedule(new TimerTask() {
             @Override
             public void run() {
-                Intent intentOne = new Intent(MainActivity.this, SecondActivity.class);
+                Intent intentOne = new Intent(MainActivity.this, AllRecipe_Activity.class);
                 startActivity(intentOne);
             }
         }, 2000);

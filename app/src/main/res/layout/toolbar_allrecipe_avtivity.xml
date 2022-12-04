@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/teal_700">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="12dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/right_search_icon"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_baseline_search_24">
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbar_title_4"
+            android:layout_marginStart="16dp"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            android:fontFamily="@font/alice"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:text="Vietnamesiche Küche">
+        </TextView>
+    </RelativeLayout>
+
+</RelativeLayout>

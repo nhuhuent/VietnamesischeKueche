@@ -4,69 +4,66 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/hintergrund16"
-    tools:context=".SecondActivity"
+    android:background="@drawable/hintergrund10"
+    tools:context=".AllRecipe_Activity"
     tools:ignore="ExtraText">
 
+    <include layout="@layout/toolbar_allrecipe_avtivity"/>
+
     <ImageView
-        android:id="@+id/imageView13"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
+        android:id="@+id/nudelnImg"
+        android:layout_width="127dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="12dp"
         android:padding="10dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView14"
+        app:layout_constraintBottom_toTopOf="@+id/spazialitaetImg"
         app:layout_constraintEnd_toStartOf="@+id/nudelnButton"
         app:layout_constraintHorizontal_bias="0.333"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/nudeln" />
 
-    <TextView
-        android:id="@+id/title_app"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:fontFamily="@font/alice"
-        android:text="@string/textview5"
-        android:textAllCaps="true"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textColor="@color/white"
-        android:textSize="32sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/reisButton"
-        app:layout_constraintEnd_toEndOf="parent"
+    <ImageView
+        android:id="@+id/reisImg"
+        android:layout_width="126dp"
+        android:layout_height="99dp"
+        android:padding="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/nudelnImg"
+        app:layout_constraintEnd_toStartOf="@+id/reisButton"
+        app:layout_constraintHorizontal_bias="0.295"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.278" />
+        app:layout_constraintVertical_bias="0.947"
+        app:srcCompat="@drawable/reis" />
 
     <ImageView
-        android:id="@+id/imageView14"
+        android:id="@+id/vegetarischImg"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="12dp"
         android:padding="10dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView15"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/vegetarischButton"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/vegetarisch" />
+
+    <ImageView
+        android:id="@+id/spazialitaetImg"
+        android:layout_width="127dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="4dp"
+        android:padding="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/vegetarischImg"
         app:layout_constraintEnd_toStartOf="@+id/spezialitaetButton"
         app:layout_constraintHorizontal_bias="0.328"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/spezialitaet" />
 
-    <ImageView
-        android:id="@+id/imageView15"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="4dp"
-        android:padding="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/vegetarischButton"
-        app:layout_constraintHorizontal_bias="0.304"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/vegetarisch" />
-
     <Button
         android:id="@+id/vegetarischButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
+        android:layout_marginBottom="40dp"
         android:fontFamily="@font/alice"
         android:text="@string/button_v"
         android:textAllCaps="false"
@@ -82,7 +79,7 @@
         android:id="@+id/spezialitaetButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="68dp"
+        android:layout_marginBottom="56dp"
         android:fontFamily="@font/alice"
         android:text="@string/button_s"
         android:textAllCaps="false"
@@ -123,22 +120,9 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/nudelnButton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.606"
+        app:layout_constraintHorizontal_bias="0.609"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.908" />
-
-    <ImageView
-        android:id="@+id/imageView12"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="10dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView13"
-        app:layout_constraintEnd_toStartOf="@+id/reisButton"
-        app:layout_constraintHorizontal_bias="0.3"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.945"
-        app:srcCompat="@drawable/reis" />
+        app:layout_constraintVertical_bias="0.923" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
