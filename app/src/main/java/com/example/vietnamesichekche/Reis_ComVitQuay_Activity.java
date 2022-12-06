@@ -7,20 +7,21 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
-public class Reis_ComTam extends AppCompatActivity {
+public class Reis_ComVitQuay_Activity extends AppCompatActivity {
 
-    ImageView comtamImg;
+    ImageView comvitquayImg;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.reis_com_tam);
+        setContentView(R.layout.activity_reis_com_vit_quay);
 
         // back button
-        comtamImg =(ImageView) findViewById(R.id.left_back_1);
-        comtamImg.setOnClickListener(new View.OnClickListener() {
+        comvitquayImg =(ImageView) findViewById(R.id.left_back_9);
+        comvitquayImg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent backIcon = new Intent(Reis_ComTam.this, Reis_Gerichte_Activity.class);
+                Intent backIcon = new Intent(Reis_ComVitQuay_Activity.this, Reis_Gerichte_Activity.class);
                 startActivity(backIcon);
             }
         });

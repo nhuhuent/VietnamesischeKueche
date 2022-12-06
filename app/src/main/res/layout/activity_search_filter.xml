@@ -1,46 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:padding="10dp">
-   
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:id="@+id/img_recipe"
-        android:src="@drawable/comtam"/>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Search_Filter_Activity">
 
-    <LinearLayout
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView_filter"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="5dp"
-        android:layout_toEndOf="@+id/img_recipe"
-        android:layout_centerVertical="true"
-        android:orientation="vertical">
+        android:layout_height="715dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true" />
 
-        <TextView
-            android:id="@+id/deutsch_name"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/alice"
-            android:text="@string/dish_name"
-            android:textColor="@color/teal_700"
-            android:textSize="18sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/vietnam_name"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/alice"
-            android:text="@string/reis_comtam"
-            android:textColor="@color/teal_700"
-            android:textSize="18sp" />
-
-
-    </LinearLayout>
-    
 </RelativeLayout>
-    
-    
-    

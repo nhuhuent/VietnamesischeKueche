@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Reis_ComVitQuay">
+    tools:context=".Reis_ComVitQuay_Activity">
     <include layout="@layout/toolbar_reis_comvitquay_activity"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

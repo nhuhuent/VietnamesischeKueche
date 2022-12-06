@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Reis_DauHuTomRim">
-    <include layout="@layout/toolbar_reis_dauhutomrim_activity"/>
+    tools:context=".Reis_ComGaLuoc_Activity">
+    <include layout="@layout/toolbar_reis_comgaluoc_activity"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

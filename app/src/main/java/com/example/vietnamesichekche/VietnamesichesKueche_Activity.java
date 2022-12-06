@@ -21,7 +21,7 @@ public class VietnamesichesKueche_Activity extends AppCompatActivity {
 
         searchIcon = (ImageView) findViewById(R.id.right_search_icon);
         searchIcon.setOnClickListener((View view) -> {
-            Intent searchIcon = new Intent(VietnamesichesKueche_Activity.this, Search_Activity.class);
+            Intent searchIcon = new Intent(VietnamesichesKueche_Activity.this, Search_Filter_Activity.class);
             startActivity(searchIcon);
         });
 

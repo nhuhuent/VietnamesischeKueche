@@ -33,57 +33,57 @@ public class Reis_Gerichte_Activity extends AppCompatActivity {
         // events for Images
         comtamImg = (ImageView) findViewById(R.id.bild_comtam);
         comtamImg.setOnClickListener((View view) -> {
-                Intent comtamIntent = new Intent(Reis_Gerichte_Activity.this, Reis_ComTam.class);
+                Intent comtamIntent = new Intent(Reis_Gerichte_Activity.this, Reis_ComTam_Activity.class);
                 startActivity(comtamIntent);
         });
 
         gakhosaotImg = (ImageView) findViewById(R.id.bild_gakhosaot);
         gakhosaotImg.setOnClickListener((View view) -> {
-                Intent gakhosaotIntent = new Intent(Reis_Gerichte_Activity.this, Reis_GaKhoSaOt.class);
+                Intent gakhosaotIntent = new Intent(Reis_Gerichte_Activity.this, Reis_GaKhoSaOt_Activity.class);
                 startActivity(gakhosaotIntent);
         });
 
         dauhurimtomImg = (ImageView) findViewById(R.id.bild_dauhurimtom);
         dauhurimtomImg.setOnClickListener((View view) -> {
-                Intent dauhurimtomIntent = new Intent(Reis_Gerichte_Activity.this, Reis_DauHuTomRim.class);
+                Intent dauhurimtomIntent = new Intent(Reis_Gerichte_Activity.this, Reis_DauHuTomRim_Activity.class);
                 startActivity(dauhurimtomIntent);
         });
 
 
         comgaluocImg = (ImageView) findViewById(R.id.bild_comgaluoc);
         comgaluocImg.setOnClickListener((View view) -> {
-                Intent comgaluocIntent = new Intent(Reis_Gerichte_Activity.this, Reis_ComGaLuoc.class);
+                Intent comgaluocIntent = new Intent(Reis_Gerichte_Activity.this, Reis_ComGaLuoc_Activity.class);
                 startActivity(comgaluocIntent);
         });
 
         comchienduongchauImg = (ImageView) findViewById(R.id.bild_comchienduongchau);
         comchienduongchauImg.setOnClickListener((View view) -> {
-                Intent comchienduongchauIntent = new Intent(Reis_Gerichte_Activity.this, Reis_ComChienDuongChau.class);
+                Intent comchienduongchauIntent = new Intent(Reis_Gerichte_Activity.this, Reis_ComChienDuongChau_Activity.class);
                 startActivity(comchienduongchauIntent);
         });
 
         dauhusotcaImg = (ImageView) findViewById(R.id.bild_dauhusotca);
         dauhusotcaImg.setOnClickListener((View view) -> {
-                Intent dauhusotcaIntent = new Intent(Reis_Gerichte_Activity.this, Reis_DauHuSotCa.class);
+                Intent dauhusotcaIntent = new Intent(Reis_Gerichte_Activity.this, Reis_DauHuSotCa_Activity.class);
                 startActivity(dauhusotcaIntent);
         });
 
         comvitquayImg = (ImageView) findViewById(R.id.bild_comvitquay);
         comvitquayImg.setOnClickListener((View view) -> {
-                Intent comvitquayIntent = new Intent(Reis_Gerichte_Activity.this, Reis_ComVitQuay.class);
+                Intent comvitquayIntent = new Intent(Reis_Gerichte_Activity.this, Reis_ComVitQuay_Activity.class);
                 startActivity(comvitquayIntent);
 
         });
 
         canhchuanamchayImg = (ImageView) findViewById(R.id.bild_canhchuanamchay);
         canhchuanamchayImg.setOnClickListener((View view) -> {
-                Intent canhchuanamchayIntent = new Intent(Reis_Gerichte_Activity.this, Reis_CanhChuaNamChay.class);
+                Intent canhchuanamchayIntent = new Intent(Reis_Gerichte_Activity.this, Reis_CanhChuaNamChay_Activity.class);
                 startActivity(canhchuanamchayIntent);
         });
 
         boluclacImg = (ImageView) findViewById(R.id.bild_boluclac);
         boluclacImg.setOnClickListener((View view) -> {
-            Intent canhchuanamchayIntent = new Intent(Reis_Gerichte_Activity.this, Reis_BoLucLac.class);
+            Intent canhchuanamchayIntent = new Intent(Reis_Gerichte_Activity.this, Reis_BoLucLac_Activity.class);
             startActivity(canhchuanamchayIntent);
         });
     }

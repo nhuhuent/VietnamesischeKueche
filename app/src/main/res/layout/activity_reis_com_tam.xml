@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Reis_GaKhoSaOt">
-    <include layout="@layout/toolbar_reis_gakhosaot_activity"/>
+    tools:context=".Reis_ComTam_Activity">
+    <include layout="@layout/toolbar_reis_comtam_activity"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
