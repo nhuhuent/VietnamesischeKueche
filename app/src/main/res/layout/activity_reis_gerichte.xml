@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hintergrund9"
+    tools:context=".Reis_Gerichte_Activity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="19dp">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/toolbar_reis_activity" />
+
+    <ImageView
+        android:id="@+id/bild_comtam"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include"
+        app:srcCompat="@drawable/reis_comtam_text" />
+
+    <ImageView
+        android:id="@+id/bild_gakhosaot"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toEndOf="@+id/bild_comtam"
+        app:layout_constraintTop_toBottomOf="@+id/include"
+        app:srcCompat="@drawable/reis_gaxaosaot_text" />
+
+    <ImageView
+        android:id="@+id/bild_dauhurimtom"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="27dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/bild_gakhosaot"
+        app:layout_constraintTop_toBottomOf="@+id/include"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/reis_dauhurimtom_text" />
+
+    <ImageView
+        android:id="@+id/bild_comgaluoc"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bild_comtam"
+        app:srcCompat="@drawable/reis_comgaluoc_text" />
+
+    <ImageView
+        android:id="@+id/bild_comchienduongchau"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toEndOf="@+id/bild_comgaluoc"
+        app:layout_constraintTop_toBottomOf="@+id/bild_gakhosaot"
+        app:srcCompat="@drawable/reis_comchienduongchau_text" />
+
+    <ImageView
+        android:id="@+id/bild_comvitquay"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bild_comgaluoc"
+        app:srcCompat="@drawable/reis_comvitquay_text" />
+
+    <ImageView
+        android:id="@+id/bild_canhchuanamchay"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="27dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/bild_boluclac"
+        app:layout_constraintTop_toBottomOf="@+id/bild_dauhusotca"
+        app:layout_constraintVertical_bias="0.007"
+        app:srcCompat="@drawable/reis_canhchuanamchay_text" />
+
+    <ImageView
+        android:id="@+id/bild_boluclac"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toEndOf="@+id/bild_comvitquay"
+        app:layout_constraintTop_toBottomOf="@+id/bild_comchienduongchau"
+        app:srcCompat="@drawable/reis_boluclac_text" />
+
+    <Button
+        android:id="@+id/button_r_menu"
+        android:layout_width="126dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/alice"
+        android:text="@string/button_r_meunu"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bild_boluclac"
+        app:layout_constraintVertical_bias="0.893" />
+
+    <ImageView
+        android:id="@+id/bild_dauhusotca"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="27dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toEndOf="@+id/bild_comchienduongchau"
+        app:layout_constraintTop_toBottomOf="@+id/bild_dauhurimtom"
+        app:srcCompat="@drawable/reis_dauhusotca_text" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

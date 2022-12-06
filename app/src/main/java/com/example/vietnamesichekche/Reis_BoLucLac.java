@@ -21,7 +21,7 @@ public class Reis_BoLucLac extends AppCompatActivity {
         boluclacImg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent backIcon = new Intent(Reis_BoLucLac.this, Reis_Gerichte.class);
+                Intent backIcon = new Intent(Reis_BoLucLac.this, Reis_Gerichte_Activity.class);
                 startActivity(backIcon);
             }
         });

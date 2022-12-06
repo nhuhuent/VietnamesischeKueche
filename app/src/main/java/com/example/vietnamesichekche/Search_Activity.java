@@ -9,7 +9,7 @@ public class Search_Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.search_activity);
+        setContentView(R.layout.activity_search_filter);
 
         // back button
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);

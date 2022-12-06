@@ -20,7 +20,7 @@ public class Reis_ComTam extends AppCompatActivity {
         comtamImg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent backIcon = new Intent(Reis_ComTam.this, Reis_Gerichte.class);
+                Intent backIcon = new Intent(Reis_ComTam.this, Reis_Gerichte_Activity.class);
                 startActivity(backIcon);
             }
         });

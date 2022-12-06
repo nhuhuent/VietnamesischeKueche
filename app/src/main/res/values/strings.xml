@@ -1,11 +1,11 @@
 <resources>
     <string name="app_name"></string>
-    <string name="button_pageone">Weiter</string>
     <string name="button_s">Spezialität</string>
     <string name="button_n">Nudeln</string>
     <string name="button_r">Reis</string>
     <string name="button_v">Vegetarisch</string>
-    <string name="button_pagethree">Weiter</string>
+    <string name="button_r_meunu">Weiter</string>
+    <string name="button_n_meunu">Weiter</string>
     <string name="content_descr_cartoon_image">cartoon image</string>
     <string name="textview_p2">Vietnamesische Küche</string>
     <string name="search_p2"> Search</string>
@@ -17,16 +17,19 @@
     <string name="textview5">Vietnamesische Küche</string>
     <string name="title_activity_nudeln">Nudeln_Activity</string>
 
-    <string name="reis_boluclac">Bò Lúc Lắc</string>
-    <string name="reis_canhchuanamchay">Canh Chua Nấm Chay</string>
-    <string name="reis_comchienduongchau">Cơm Chiên Dương Châu</string>
-    <string name="reis_comgaluoc">Cơm Gà Luộc</string>
-    <string name="reis_comvitquay">Cơm Vịt Quay</string>
-    <string name="reis_dauhurimtom">Đậu Hũ Rim Tôm</string>
-    <string name="reis_dauhusotca">Đậu Hũ Sốt Cà</string>
-    <string name="reis_gakhosaot">Gà Kho Sả Ớt</string>
-    <string name="reis_comtam">Cơm Tấm</string>
+    <string name="reis_boluclac">Geschwenktes Rindfleisch</string>
+    <string name="reis_canhchuanamchay">Vegetarische Sauersuppe</string>
+    <string name="reis_comchienduongchau">Gebratener Reis mit Ei, Garnele und Gemüse</string>
+    <string name="reis_comgaluoc">Gekochtes Huhn mit Reis</string>
+    <string name="reis_comvitquay">Grillente mit Reis</string>
+    <string name="reis_dauhurimtom">Gebratene Tofu mit Garnele</string>
+    <string name="reis_dauhusotca">Tofu in Tomatensauce</string>
+    <string name="reis_gakhosaot">Gebratenes Hühnchen mit Zitronengras</string>
     <string name="reis_weiter">Weiter</string>
+
+    <string name="dish_name">Gebrochener Reis mit gegrilltem Kotelett</string>
+    <string name="reis_comtam">(Cơm Tấm)</string>
+
 
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>

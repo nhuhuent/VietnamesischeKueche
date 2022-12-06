@@ -20,7 +20,7 @@ public class Reis_GaKhoSaOt extends AppCompatActivity {
         gakhosaotImg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent backIcon = new Intent(Reis_GaKhoSaOt.this, Reis_Gerichte.class);
+                Intent backIcon = new Intent(Reis_GaKhoSaOt.this, Reis_Gerichte_Activity.class);
                 startActivity(backIcon);
             }
         });

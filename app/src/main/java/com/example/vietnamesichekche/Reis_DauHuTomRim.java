@@ -21,7 +21,7 @@ public class Reis_DauHuTomRim extends AppCompatActivity {
         dauhutomrimImg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent backIcon = new Intent(Reis_DauHuTomRim.this, Reis_Gerichte.class);
+                Intent backIcon = new Intent(Reis_DauHuTomRim.this, Reis_Gerichte_Activity.class);
                 startActivity(backIcon);
             }
         });

@@ -21,7 +21,7 @@ public class Reis_CanhChuaNamChay extends AppCompatActivity {
         canhchuanamchayImg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent backIcon = new Intent(Reis_CanhChuaNamChay.this, Reis_Gerichte.class);
+                Intent backIcon = new Intent(Reis_CanhChuaNamChay.this, Reis_Gerichte_Activity.class);
                 startActivity(backIcon);
             }
         });

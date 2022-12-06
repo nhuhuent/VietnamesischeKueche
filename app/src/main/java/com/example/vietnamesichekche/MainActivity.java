@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main_activity);
+        setContentView(R.layout.activity_main);
         // fullscreen to do
         // getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         timer.schedule(new TimerTask() {
             @Override
             public void run() {
-                Intent intentOne = new Intent(MainActivity.this, AllRecipe_Activity.class);
+                Intent intentOne = new Intent(MainActivity.this, VietnamesichesKueche_Activity.class);
                 startActivity(intentOne);
             }
         }, 2000);

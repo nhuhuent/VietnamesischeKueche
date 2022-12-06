@@ -15,7 +15,7 @@
         <activity
             android:name=".Reis_BoLucLac"
             android:exported="false"
-            android:parentActivityName=".Reis_Gerichte"
+            android:parentActivityName=".Reis_Gerichte_Activity"
             android:theme="@style/Theme.VietnamesicheKüche.NoActionBar">
             <meta-data
                 android:name="android.app.lib_name"
@@ -24,7 +24,7 @@
         <activity
             android:name=".Reis_CanhChuaNamChay"
             android:exported="false"
-            android:parentActivityName=".Reis_Gerichte"
+            android:parentActivityName=".Reis_Gerichte_Activity"
             android:theme="@style/Theme.VietnamesicheKüche.NoActionBar">
             <meta-data
                 android:name="android.app.lib_name"
@@ -33,7 +33,7 @@
         <activity
             android:name=".Reis_ComVitQuay"
             android:exported="false"
-            android:parentActivityName=".Reis_Gerichte"
+            android:parentActivityName=".Reis_Gerichte_Activity"
             android:theme="@style/Theme.VietnamesicheKüche.NoActionBar">
             <meta-data
                 android:name="android.app.lib_name"
@@ -42,7 +42,7 @@
         <activity
             android:name=".Reis_DauHuSotCa"
             android:exported="false"
-            android:parentActivityName=".Reis_Gerichte"
+            android:parentActivityName=".Reis_Gerichte_Activity"
             android:theme="@style/Theme.VietnamesicheKüche.NoActionBar">
             <meta-data
                 android:name="android.app.lib_name"
@@ -51,7 +51,7 @@
         <activity
             android:name=".Reis_ComChienDuongChau"
             android:exported="false"
-            android:parentActivityName=".Reis_Gerichte"
+            android:parentActivityName=".Reis_Gerichte_Activity"
             android:theme="@style/Theme.VietnamesicheKüche.NoActionBar">
             <meta-data
                 android:name="android.app.lib_name"
@@ -60,7 +60,7 @@
         <activity
             android:name=".Reis_ComGaLuoc"
             android:exported="false"
-            android:parentActivityName=".Reis_Gerichte"
+            android:parentActivityName=".Reis_Gerichte_Activity"
             android:theme="@style/Theme.VietnamesicheKüche.NoActionBar">
             <meta-data
                 android:name="android.app.lib_name"
@@ -69,7 +69,7 @@
         <activity
             android:name=".Reis_DauHuTomRim"
             android:exported="false"
-            android:parentActivityName=".Reis_Gerichte"
+            android:parentActivityName=".Reis_Gerichte_Activity"
             android:theme="@style/Theme.VietnamesicheKüche.NoActionBar">
             <meta-data
                 android:name="android.app.lib_name"
@@ -78,7 +78,7 @@
         <activity
             android:name=".Reis_GaKhoSaOt"
             android:exported="false"
-            android:parentActivityName=".Reis_Gerichte"
+            android:parentActivityName=".Reis_Gerichte_Activity"
             android:theme="@style/Theme.VietnamesicheKüche.NoActionBar">
             <meta-data
                 android:name="android.app.lib_name"
@@ -88,15 +88,15 @@
             android:name=".Reis_ComTam"
             android:exported="false"
             android:theme="@style/Theme.VietnamesicheKüche.NoActionBar"
-            android:parentActivityName=".Reis_Gerichte">
+            android:parentActivityName=".Reis_Gerichte_Activity">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".Reis_Gerichte"
+            android:name=".Reis_Gerichte_Activity"
             android:exported="false"
-            android:parentActivityName=".AllRecipe_Activity"
+            android:parentActivityName=".VietnamesichesKueche_Activity"
             android:theme="@style/Theme.VietnamesicheKüche.NoActionBar"
             >
             <meta-data
@@ -104,27 +104,27 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".Vegatarisch_Gerichte"
+            android:name=".Vegatarisch_Gerichte_Activity"
             android:exported="false"
-            android:parentActivityName=".AllRecipe_Activity"
+            android:parentActivityName=".VietnamesichesKueche_Activity"
             android:theme="@style/Theme.VietnamesicheKüche.NoActionBar">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".Spezialitaet_Gerichte"
+            android:name=".Spezialitaet_Gerichte_Activity"
             android:exported="false"
-            android:parentActivityName=".AllRecipe_Activity"
+            android:parentActivityName=".VietnamesichesKueche_Activity"
             android:theme="@style/Theme.VietnamesicheKüche.NoActionBar">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".Nudeln_Gerichte"
+            android:name=".Nudeln_Gerichte_Activity"
             android:exported="false"
-            android:parentActivityName=".AllRecipe_Activity"
+            android:parentActivityName=".VietnamesichesKueche_Activity"
             android:theme="@style/Theme.VietnamesicheKüche.NoActionBar">
             <meta-data
                 android:name="android.app.lib_name"
@@ -133,13 +133,13 @@
         <activity
             android:name=".Search_Activity"
             android:exported="false"
-            android:parentActivityName=".AllRecipe_Activity">
+            android:parentActivityName=".VietnamesichesKueche_Activity">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".AllRecipe_Activity"
+            android:name=".VietnamesichesKueche_Activity"
             android:exported="false"
             android:theme="@style/Theme.VietnamesicheKüche.NoActionBar">
             <meta-data

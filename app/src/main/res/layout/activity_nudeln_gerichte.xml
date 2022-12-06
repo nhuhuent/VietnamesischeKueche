@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hintergrund9"
+    tools:context=".Nudeln_Gerichte_Activity">
+
+    <include
+        android:id="@+id/include2"
+        layout="@layout/toolbar_nudeln_activity" />
+
+    <ImageView
+        android:id="@+id/bild_phobo"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include2"
+        app:srcCompat="@drawable/nudeln_phobo_text" />
+
+    <ImageView
+        android:id="@+id/bild_hutieutomthit"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toEndOf="@+id/bild_phobo"
+        app:layout_constraintTop_toBottomOf="@+id/include2"
+        app:srcCompat="@drawable/nudeln_hutieutomthit_text" />
+
+    <ImageView
+        android:id="@+id/bild_mienga"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="27dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/bild_hutieutomthit"
+        app:layout_constraintTop_toBottomOf="@+id/include2"
+        app:srcCompat="@drawable/nudeln_mienga_text" />
+
+    <ImageView
+        android:id="@+id/bild_miquang"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bild_phobo"
+        app:srcCompat="@drawable/nudeln_miquang_text" />
+
+    <ImageView
+        android:id="@+id/bild_bunbo"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toEndOf="@+id/bild_miquang"
+        app:layout_constraintTop_toBottomOf="@+id/bild_hutieutomthit"
+        app:srcCompat="@drawable/nudeln_bunbo_text" />
+
+    <ImageView
+        android:id="@+id/bild_mixaobo"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="27dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/bild_bunbo"
+        app:layout_constraintTop_toBottomOf="@+id/bild_mienga"
+        app:srcCompat="@drawable/nudeln_mixaobo_text" />
+
+    <ImageView
+        android:id="@+id/bild_mienchayraucu"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bild_miquang"
+        app:srcCompat="@drawable/nudeln_mienchayraucu_text" />
+
+    <ImageView
+        android:id="@+id/bild_mienchayxao"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toEndOf="@+id/bild_mienchayraucu"
+        app:layout_constraintTop_toBottomOf="@+id/bild_bunbo"
+        app:srcCompat="@drawable/nudeln_mienchayxao_text" />
+
+    <ImageView
+        android:id="@+id/bild_bunthitnuong"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="27dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bild_mienchayxao"
+        app:layout_constraintTop_toBottomOf="@+id/bild_mixaobo"
+        app:srcCompat="@drawable/nudeln_bunthitnuong_text" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/alice"
+        android:text="@string/button_n_meunu"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bild_mienchayxao"
+        app:layout_constraintVertical_bias="0.773" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

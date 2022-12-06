@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/hintergrund10"
-    tools:context=".AllRecipe_Activity"
+    tools:context=".VietnamesichesKueche_Activity"
     tools:ignore="ExtraText">
 
-    <include layout="@layout/toolbar_allrecipe_avtivity"/>
+    <include layout="@layout/toolbar_vietnamesische_kueche_avtivity"/>
 
     <ImageView
         android:id="@+id/nudelnImg"

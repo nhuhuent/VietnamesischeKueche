@@ -21,7 +21,7 @@ public class Reis_ComVitQuay extends AppCompatActivity {
         comvitquayImg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent backIcon = new Intent(Reis_ComVitQuay.this, Reis_Gerichte.class);
+                Intent backIcon = new Intent(Reis_ComVitQuay.this, Reis_Gerichte_Activity.class);
                 startActivity(backIcon);
             }
         });
