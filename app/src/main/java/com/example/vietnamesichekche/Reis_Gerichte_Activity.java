@@ -21,7 +21,7 @@ public class Reis_Gerichte_Activity extends AppCompatActivity {
 
         // back button
         //getSupportActionBar().setDisplayHomeAsUpEnabled(true); or:
-        backIcon =(ImageView) findViewById(R.id.left_back_icon_1);
+        backIcon =(ImageView) findViewById(R.id.left_back_icon);
         backIcon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -37,18 +37,11 @@ public class Reis_Gerichte_Activity extends AppCompatActivity {
                 startActivity(comtamIntent);
         });
 
-        gakhosaotImg = (ImageView) findViewById(R.id.bild_gakhosaot);
+        gakhosaotImg = (ImageView) findViewById(R.id.bild_gaxaosaot);
         gakhosaotImg.setOnClickListener((View view) -> {
-                Intent gakhosaotIntent = new Intent(Reis_Gerichte_Activity.this, Reis_GaKhoSaOt_Activity.class);
+                Intent gakhosaotIntent = new Intent(Reis_Gerichte_Activity.this, Reis_GaXaoSaOt_Activity.class);
                 startActivity(gakhosaotIntent);
         });
-
-        dauhurimtomImg = (ImageView) findViewById(R.id.bild_dauhurimtom);
-        dauhurimtomImg.setOnClickListener((View view) -> {
-                Intent dauhurimtomIntent = new Intent(Reis_Gerichte_Activity.this, Reis_DauHuTomRim_Activity.class);
-                startActivity(dauhurimtomIntent);
-        });
-
 
         comgaluocImg = (ImageView) findViewById(R.id.bild_comgaluoc);
         comgaluocImg.setOnClickListener((View view) -> {
@@ -64,7 +57,7 @@ public class Reis_Gerichte_Activity extends AppCompatActivity {
 
         dauhusotcaImg = (ImageView) findViewById(R.id.bild_dauhusotca);
         dauhusotcaImg.setOnClickListener((View view) -> {
-                Intent dauhusotcaIntent = new Intent(Reis_Gerichte_Activity.this, Reis_DauHuSotCa_Activity.class);
+                Intent dauhusotcaIntent = new Intent(Reis_Gerichte_Activity.this, Reis_Vege_DauHuSotCa_Activity.class);
                 startActivity(dauhusotcaIntent);
         });
 
@@ -77,7 +70,7 @@ public class Reis_Gerichte_Activity extends AppCompatActivity {
 
         canhchuanamchayImg = (ImageView) findViewById(R.id.bild_canhchuanamchay);
         canhchuanamchayImg.setOnClickListener((View view) -> {
-                Intent canhchuanamchayIntent = new Intent(Reis_Gerichte_Activity.this, Reis_CanhChuaNamChay_Activity.class);
+                Intent canhchuanamchayIntent = new Intent(Reis_Gerichte_Activity.this, Reis_Vege_CanhChuaNamChay_Activity.class);
                 startActivity(canhchuanamchayIntent);
         });
 

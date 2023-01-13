@@ -13,6 +13,7 @@ public class VietnamesichesKueche_Activity extends AppCompatActivity {
     Button reisButton, nudelnButton, spezialitaetButton, vegetarischButton;
     ImageView searchIcon;
     ImageView reisImg, nudelnImg, spezialitaetImg, vegetarischImg;
+    Reis_ComTam_Activity reisComTamActivity;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,7 +38,7 @@ public class VietnamesichesKueche_Activity extends AppCompatActivity {
                 startActivity(nudelnIntent);
         });
 
-        spezialitaetImg =(ImageView) findViewById(R.id.spazialitaetImg);
+        spezialitaetImg =(ImageView) findViewById(R.id.spezialitaetImg);
         spezialitaetImg.setOnClickListener((View view) -> {
                 Intent spezialitaetIntent = new Intent(VietnamesichesKueche_Activity.this, Spezialitaet_Gerichte_Activity.class);
                 startActivity(spezialitaetIntent);
@@ -45,32 +46,32 @@ public class VietnamesichesKueche_Activity extends AppCompatActivity {
 
         vegetarischImg =(ImageView) findViewById(R.id.vegetarischImg);
         vegetarischImg.setOnClickListener((View view) -> {
-                Intent vegetarischIntent = new Intent(VietnamesichesKueche_Activity.this, Vegatarisch_Gerichte_Activity.class);
-                startActivity(vegetarischIntent);
+            Intent vegetarischIntent = new Intent(VietnamesichesKueche_Activity.this, Vegatarisch_Gerichte_Activity.class);
+            startActivity(vegetarischIntent);
         });
 
         reisButton = (Button) findViewById(R.id.reisButton);
         reisButton.setOnClickListener((View view) ->{
-                Intent reisIntentButton = new Intent(VietnamesichesKueche_Activity.this, Reis_Gerichte_Activity.class);
-                startActivity(reisIntentButton);
+            Intent reisIntentButton = new Intent(VietnamesichesKueche_Activity.this, Reis_Gerichte_Activity.class);
+            startActivity(reisIntentButton);
         });
 
         spezialitaetButton = findViewById(R.id.spezialitaetButton);
         spezialitaetButton.setOnClickListener((View view) -> {
-                Intent nudelnIntentButton = new Intent(VietnamesichesKueche_Activity.this, Spezialitaet_Gerichte_Activity.class);
-                startActivity(nudelnIntentButton);
+            Intent spezialitaetIntentButton = new Intent(VietnamesichesKueche_Activity.this, Spezialitaet_Gerichte_Activity.class);
+            startActivity(spezialitaetIntentButton);
         });
 
         nudelnButton = findViewById(R.id.nudelnButton);
         nudelnButton.setOnClickListener((View view) -> {
-                Intent nudelnIntentButton = new Intent(VietnamesichesKueche_Activity.this, Nudeln_Gerichte_Activity.class);
-                startActivity(nudelnIntentButton);
+            Intent nudelnIntentButton = new Intent(VietnamesichesKueche_Activity.this, Nudeln_Gerichte_Activity.class);
+            startActivity(nudelnIntentButton);
         });
 
         vegetarischButton = findViewById(R.id.vegetarischButton);
         vegetarischButton.setOnClickListener((View view) -> {
-                Intent nudelnIntentButton = new Intent(VietnamesichesKueche_Activity.this, Vegatarisch_Gerichte_Activity.class);
-                startActivity(nudelnIntentButton);
+            Intent vegetarischIntentButton = new Intent(VietnamesichesKueche_Activity.this, Vegatarisch_Gerichte_Activity.class);
+            startActivity(vegetarischIntentButton);
         });
     }
 

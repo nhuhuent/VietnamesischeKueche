@@ -1,19 +1,19 @@
 <resources>
     <string name="app_name"></string>
-    <string name="button_s">Spezialität</string>
-    <string name="button_n">Nudeln</string>
-    <string name="button_r">Reis</string>
-    <string name="button_v">Vegetarisch</string>
+    <string name="button_spezialitaet">Spezialität</string>
+    <string name="button_nudeln">Nudeln</string>
+    <string name="button_reis">Reis</string>
+    <string name="button_vegetarisch">Vegetarisch</string>
     <string name="button_r_meunu">Weiter</string>
     <string name="button_n_meunu">Weiter</string>
     <string name="content_descr_cartoon_image">cartoon image</string>
     <string name="textview_p2">Vietnamesische Küche</string>
     <string name="search_p2"> Search...</string>
     <string name="search_p3"> Bitte Gerichte eingeben</string>
-    <string name="textview1">Spezialitäte Gerichte</string>
-    <string name="textview2">Nudel Gerichte</string>
-    <string name="textview3">Reis Gerichte</string>
-    <string name="textview4">Vegetarische Gerichte</string>
+    <string name="Spezialitaet_gerichte">Spezialitäte Gerichte</string>
+    <string name="nudeln_gerichte">Nudeln Gerichte</string>
+    <string name="reis_gerichte">Reis Gerichte</string>
+    <string name="vegetarisch_gerichte">Vegetarische Gerichte</string>
     <string name="textview5">Vietnamesische Küche</string>
     <string name="title_activity_nudeln">Nudeln_Activity</string>
 
@@ -29,6 +29,23 @@
     <string name="dish_name">Gebrochener Reis mit gegrilltem Kotelett</string>
     <string name="reis_comtam">(Cơm Tấm)</string>
 
+    <string name="nudeln_phobo">Phở Bò (PHỞ Rindernudelsuppe)</string>
+    <string name="nudeln_hutieutmthit">Hủ Tiếu Tôm Thịt (Reisbandnudel Suppe mit Schweinefleisch und Garnele)</string>
+    <string name="nudeln_mienga">Miến Gà (Hühner Glasnudelsuppe)</string>
+    <string name="nudeln_miquang">Mì Quảng (Quang Nudel)</string>
+    <string name="nudeln_bunbohue">Bún Bò Huế (HUẾ Rindersuppe)</string>
+    <string name="nudeln_bunthitnuong">Bún Thịt Nướng (Reisnudeln mit gegrilltem Schweinefleisch)</string>
+    <string name="nudeln_mienchayraucu">Miến Chay Rau Củ (Vegetarische Glasnudelsuppe)</string>
+    <string name="nudeln_mienchayxao"> Miến Chay Xào (Vegetarische gebratene Glasnudeln)</string>
+
+    <string name="spezialitaet_banhmithitheonuong">Bánh Mì Thịt Heo Nướng (Vietnamesiches Schweinefleisch-Baguette)</string>
+    <string name="spezialitaet_banhxeo">Bánh Xèo (Vietnamesische Pfannkuchen)</string>
+    <string name="spezialitaet_goicuon">Gỏi Cuốn (Vietnamesische Sommerrollen)</string>
+    <string name="spezialitaet_bokho">Bò Kho (Vietnamesisches Gulasch)</string>
+    <string name="spezialitaet_lauhaisan">Lẩu Hải Sản (Meeresfrüchte Fondue)</string>
+    <string name="spezialitaet_chagio">Chả Giò (Vietnamesische Frühlingsrollen)</string>
+    <string name="spezialitaet_chagiochay">Chả Giò Chay (Vegetarische Frühlingsrollen)</string>
+    <string name="spezialitaet_goicuonchay">Gỏi Cuốn Chay (Vegetarische Sommerrollen)</string>
 
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>

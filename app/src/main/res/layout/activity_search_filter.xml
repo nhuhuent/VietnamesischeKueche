@@ -8,8 +8,35 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView_filter"
         android:layout_width="match_parent"
-        android:layout_height="715dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
-        android:layout_centerVertical="true" />
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="0dp" />
+
+    <!--<EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="0dp"
+        android:ems="10"
+        android:hint="@string/search_p2"
+        android:inputType="textPersonName"
+        android:text="@string/search_p2"
+        />-->
+
+    <!--<EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_search"
+        android:layout_weight="7"/>-->
+
 
 </RelativeLayout>

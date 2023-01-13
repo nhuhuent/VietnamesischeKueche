@@ -1,128 +1,137 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:background="@drawable/hintergrund10"
     tools:context=".VietnamesichesKueche_Activity"
     tools:ignore="ExtraText">
 
     <include layout="@layout/toolbar_vietnamesische_kueche_avtivity"/>
 
-    <ImageView
-        android:id="@+id/nudelnImg"
-        android:layout_width="127dp"
-        android:layout_height="100dp"
-        android:layout_marginBottom="12dp"
-        android:padding="10dp"
-        app:layout_constraintBottom_toTopOf="@+id/spazialitaetImg"
-        app:layout_constraintEnd_toStartOf="@+id/nudelnButton"
-        app:layout_constraintHorizontal_bias="0.333"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/nudeln" />
-
-    <ImageView
-        android:id="@+id/reisImg"
-        android:layout_width="126dp"
-        android:layout_height="99dp"
-        android:padding="10dp"
-        app:layout_constraintBottom_toTopOf="@+id/nudelnImg"
-        app:layout_constraintEnd_toStartOf="@+id/reisButton"
-        app:layout_constraintHorizontal_bias="0.295"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.947"
-        app:srcCompat="@drawable/reis" />
-
-    <ImageView
-        android:id="@+id/vegetarischImg"
-        android:layout_width="wrap_content"
-        android:layout_height="100dp"
-        android:layout_marginBottom="12dp"
-        android:padding="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/vegetarischButton"
-        app:layout_constraintHorizontal_bias="0.3"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/vegetarisch" />
-
-    <ImageView
-        android:id="@+id/spazialitaetImg"
-        android:layout_width="127dp"
-        android:layout_height="100dp"
-        android:layout_marginBottom="4dp"
-        android:padding="10dp"
-        app:layout_constraintBottom_toTopOf="@+id/vegetarischImg"
-        app:layout_constraintEnd_toStartOf="@+id/spezialitaetButton"
-        app:layout_constraintHorizontal_bias="0.328"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/spezialitaet" />
-
-    <Button
-        android:id="@+id/vegetarischButton"
-        android:layout_width="wrap_content"
+    <GridLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="40dp"
-        android:fontFamily="@font/alice"
-        android:text="@string/button_v"
-        android:textAllCaps="false"
-        android:textColor="@color/white"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.856"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:rowCount="4"
+        android:columnCount="2"
+        android:layout_margin="10dp"
+        android:layout_gravity="center_horizontal"
+        android:columnOrderPreserved="false">
 
-    <Button
-        android:id="@+id/spezialitaetButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="56dp"
-        android:fontFamily="@font/alice"
-        android:text="@string/button_s"
-        android:textAllCaps="false"
-        android:textColor="@color/white"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/vegetarischButton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.816"
-        app:layout_constraintStart_toStartOf="parent" />
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="165dp"
+            android:layout_marginLeft="20dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp">
+            <ImageView
+                android:id="@+id/reisImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/reis">
+            </ImageView>
+        </androidx.cardview.widget.CardView>
 
-    <Button
-        android:id="@+id/nudelnButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="60dp"
-        android:fontFamily="@font/alice"
-        android:text="@string/button_n"
-        android:textAllCaps="false"
-        android:textColor="@color/white"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/spezialitaetButton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.682"
-        app:layout_constraintStart_toStartOf="parent" />
+        <Button
+            android:id="@+id/reisButton"
+            android:background="@drawable/custom_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="180dp"
+            android:layout_marginLeft="30dp"
+            android:text="@string/button_reis"
+            android:textSize="24sp"
+            android:fontFamily="@font/alice"
+            android:textStyle="bold">
+        </Button>
 
-    <Button
-        android:id="@+id/reisButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="40dp"
-        android:fontFamily="@font/alice"
-        android:text="@string/button_r"
-        android:textAllCaps="false"
-        android:textColor="@color/white"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/nudelnButton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.609"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.923" />
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp">
+            <ImageView
+                android:id="@+id/nudelnImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/nudeln">
+            </ImageView>
+        </androidx.cardview.widget.CardView>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <Button
+            android:id="@+id/nudelnButton"
+            android:background="@drawable/custom_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="30dp"
+            android:text="@string/button_nudeln"
+            android:textSize="24sp"
+            android:fontFamily="@font/alice"
+            android:textStyle="bold">
+        </Button>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp">
+            <ImageView
+                android:id="@+id/spezialitaetImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/spezialitaet">
+            </ImageView>
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/spezialitaetButton"
+            android:background="@drawable/custom_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="30dp"
+            android:text="@string/button_spezialitaet"
+            android:textSize="24sp"
+            android:fontFamily="@font/alice"
+            android:textStyle="bold">
+        </Button>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp">
+            <ImageView
+                android:id="@+id/vegetarischImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/vegetarisch">
+            </ImageView>
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/vegetarischButton"
+            android:background="@drawable/custom_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="30dp"
+            android:text="@string/button_vegetarisch"
+            android:textSize="24sp"
+            android:fontFamily="@font/alice"
+            android:textStyle="bold">
+        </Button>
+
+    </GridLayout>
+
+</LinearLayout>

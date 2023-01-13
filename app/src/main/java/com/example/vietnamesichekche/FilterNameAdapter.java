@@ -1,42 +1,44 @@
 package com.example.vietnamesichekche;
 
-import android.content.Context;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Filter;
 import android.widget.Filterable;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
 import java.util.ArrayList;
 import java.util.List;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
 // 1. class FilterNameAdapter create ; 3. extends RecyclerView.Adapter
-public class FilterNameAdapter extends RecyclerView.Adapter<FilterNameAdapter.FilterNameViewHolder> implements Filterable {
+public class FilterNameAdapter extends RecyclerView.Adapter<FilterNameAdapter.ViewHolder> implements Filterable {
 
     private List<FilterName> mListFilterName;
-    private List<FilterName> mListFilterNameOld;
-    Context context;
+    private final List<FilterName> mListFilterNameOld;
+    private InterfaceClickItemFilter interfaceClickItemFilter;
 
-    public FilterNameAdapter(List<FilterName> mListFilterName) {
+    public FilterNameAdapter(List<FilterName> mListFilterName, InterfaceClickItemFilter interfaceClickItemFilter) {
         this.mListFilterName = mListFilterName;
         this.mListFilterNameOld = mListFilterName;
+        this.interfaceClickItemFilter = interfaceClickItemFilter;
     }
 
     @NonNull
     @Override
-    public FilterNameViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         // bring layout "item_filter" in View
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_filter, parent, false);
-        return new FilterNameViewHolder(view);
+        return new ViewHolder(view);
     }
 
+    // add Data on ViewHolder
     @Override
-    public void onBindViewHolder(@NonNull FilterNameViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         FilterName filterName = mListFilterName.get(position);
         if (filterName== null){
             return;
@@ -44,6 +46,13 @@ public class FilterNameAdapter extends RecyclerView.Adapter<FilterNameAdapter.Fi
         holder.imgGerichteName.setImageResource(filterName.getImage());
         holder.textViewDeutschName.setText(filterName.getDeutschName());
         holder.textViewVietnamName.setText(filterName.getVietnamName());
+
+        holder.layoutItem.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                interfaceClickItemFilter.onClickItemFilter(filterName);
+            }
+        });
     }
 
     @Override
@@ -54,15 +63,16 @@ public class FilterNameAdapter extends RecyclerView.Adapter<FilterNameAdapter.Fi
         return 0;
     }
 
-    // 2. class GerichteNameViewHolder create
-    public class FilterNameViewHolder extends RecyclerView.ViewHolder {
-
+    // 2. class ViewHolder create to get Data
+    public class ViewHolder extends RecyclerView.ViewHolder {
+        private RelativeLayout layoutItem;
         private CircleImageView imgGerichteName;
-        private TextView textViewDeutschName;
-        private TextView textViewVietnamName;
+        private final TextView textViewDeutschName;
+        private final TextView textViewVietnamName;
 
-        public FilterNameViewHolder(@NonNull View itemView) {
+        public ViewHolder(@NonNull View itemView) {
             super(itemView);
+            layoutItem= itemView.findViewById(R.id.layout_item);
             imgGerichteName= itemView.findViewById(R.id.img_recipe);
             textViewDeutschName = itemView.findViewById(R.id.deutsch_name);
             textViewVietnamName = itemView.findViewById(R.id.vietnam_name);

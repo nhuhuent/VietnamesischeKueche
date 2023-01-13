@@ -1,138 +1,263 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:background="@drawable/hintergrund9"
-    tools:context=".Reis_Gerichte_Activity"
-    tools:layout_editor_absoluteX="0dp"
-    tools:layout_editor_absoluteY="19dp">
+    tools:context=".Reis_Gerichte_Activity">
 
-    <include
-        android:id="@+id/include"
-        layout="@layout/toolbar_reis_activity" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
-    <ImageView
-        android:id="@+id/bild_comtam"
-        android:layout_width="100dp"
-        android:layout_height="150dp"
-        android:layout_marginStart="27dp"
-        android:layout_marginTop="32dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/include"
-        app:srcCompat="@drawable/reis_comtam_text" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:theme="@style/Theme.VietnamesicheKüche.AppBarOverlay">
 
-    <ImageView
-        android:id="@+id/bild_gakhosaot"
-        android:layout_width="100dp"
-        android:layout_height="150dp"
-        android:layout_marginStart="27dp"
-        android:layout_marginTop="32dp"
-        app:layout_constraintStart_toEndOf="@+id/bild_comtam"
-        app:layout_constraintTop_toBottomOf="@+id/include"
-        app:srcCompat="@drawable/reis_gaxaosaot_text" />
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/teal_700"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0"
+                app:popupTheme="@style/Theme.VietnamesicheKüche.PopupOverlay">
 
-    <ImageView
-        android:id="@+id/bild_dauhurimtom"
-        android:layout_width="100dp"
-        android:layout_height="150dp"
-        android:layout_marginStart="27dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="27dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/bild_gakhosaot"
-        app:layout_constraintTop_toBottomOf="@+id/include"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/reis_dauhurimtom_text" />
+                <ImageView
+                    android:id="@+id/left_back_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_back_24">
+                </ImageView>
 
-    <ImageView
-        android:id="@+id/bild_comgaluoc"
-        android:layout_width="100dp"
-        android:layout_height="150dp"
-        android:layout_marginStart="27dp"
-        android:layout_marginTop="32dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bild_comtam"
-        app:srcCompat="@drawable/reis_comgaluoc_text" />
+                <TextView
+                    android:text="@string/reis_gerichte"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/toolbar_title_4"
+                    android:layout_marginStart="26dp"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    android:fontFamily="@font/alice"
+                    android:textStyle="bold"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@id/left_back_icon">
 
-    <ImageView
-        android:id="@+id/bild_comchienduongchau"
-        android:layout_width="100dp"
-        android:layout_height="150dp"
-        android:layout_marginStart="27dp"
-        android:layout_marginTop="32dp"
-        app:layout_constraintStart_toEndOf="@+id/bild_comgaluoc"
-        app:layout_constraintTop_toBottomOf="@+id/bild_gakhosaot"
-        app:srcCompat="@drawable/reis_comchienduongchau_text" />
+                </TextView>
 
-    <ImageView
-        android:id="@+id/bild_comvitquay"
-        android:layout_width="100dp"
-        android:layout_height="150dp"
-        android:layout_marginStart="27dp"
-        android:layout_marginTop="32dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bild_comgaluoc"
-        app:srcCompat="@drawable/reis_comvitquay_text" />
+            </androidx.appcompat.widget.Toolbar>
 
-    <ImageView
-        android:id="@+id/bild_canhchuanamchay"
-        android:layout_width="100dp"
-        android:layout_height="150dp"
-        android:layout_marginStart="27dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="27dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/bild_boluclac"
-        app:layout_constraintTop_toBottomOf="@+id/bild_dauhusotca"
-        app:layout_constraintVertical_bias="0.007"
-        app:srcCompat="@drawable/reis_canhchuanamchay_text" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <ImageView
-        android:id="@+id/bild_boluclac"
-        android:layout_width="100dp"
-        android:layout_height="150dp"
-        android:layout_marginStart="27dp"
-        android:layout_marginTop="32dp"
-        app:layout_constraintStart_toEndOf="@+id/bild_comvitquay"
-        app:layout_constraintTop_toBottomOf="@+id/bild_comchienduongchau"
-        app:srcCompat="@drawable/reis_boluclac_text" />
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:rowCount="4"
+            android:columnCount="2"
+            android:layout_margin="5dp"
+            android:layout_gravity="center_horizontal"
+            android:columnOrderPreserved="false">
 
-    <Button
-        android:id="@+id/button_r_menu"
-        android:layout_width="126dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginBottom="8dp"
-        android:fontFamily="@font/alice"
-        android:text="@string/button_r_meunu"
-        android:textSize="22dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bild_boluclac"
-        app:layout_constraintVertical_bias="0.893" />
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5dp"
+                android:layout_marginLeft="30dp"
+                android:layout_margin="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageView
+                        android:id="@+id/bild_comtam"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/reis_text1_comtam">
+                    </ImageView>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
 
-    <ImageView
-        android:id="@+id/bild_dauhusotca"
-        android:layout_width="100dp"
-        android:layout_height="150dp"
-        android:layout_marginStart="27dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="27dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.571"
-        app:layout_constraintStart_toEndOf="@+id/bild_comchienduongchau"
-        app:layout_constraintTop_toBottomOf="@+id/bild_dauhurimtom"
-        app:srcCompat="@drawable/reis_dauhusotca_text" />
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5dp"
+                android:layout_marginLeft="30dp"
+                android:layout_margin="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/bild_boluclac"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/reis_text1_boluclac"></ImageView>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5dp"
+                android:layout_marginLeft="30dp"
+                android:layout_margin="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageView
+                        android:id="@+id/bild_canhchuanamchay"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/reis_text1_canhchuanamchay">
+                    </ImageView>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5dp"
+                android:layout_marginLeft="30dp"
+                android:layout_margin="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageView
+                        android:id="@+id/bild_comgaluoc"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/reis_text1_comgaluoc">
+                    </ImageView>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5dp"
+                android:layout_marginLeft="30dp"
+                android:layout_margin="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageView
+                        android:id="@+id/bild_comvitquay"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/reis_text1_comvitquay">
+                    </ImageView>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5dp"
+                android:layout_marginLeft="30dp"
+                android:layout_margin="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageView
+                        android:id="@+id/bild_gaxaosaot"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/reis_text1_gaxaosaot">
+                    </ImageView>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5dp"
+                android:layout_marginLeft="30dp"
+                android:layout_margin="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageView
+                        android:id="@+id/bild_comchienduongchau"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/reis_text1_comchienduongchau">
+                    </ImageView>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5dp"
+                android:layout_marginLeft="30dp"
+                android:layout_margin="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageView
+                        android:id="@+id/bild_dauhusotca"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/reis_text1_dauhusotca">
+                    </ImageView>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </GridLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+
+                android:id="@+id/reis_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/alice"
+                android:text="@string/reis_weiter"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </Button>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+</ScrollView>
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>

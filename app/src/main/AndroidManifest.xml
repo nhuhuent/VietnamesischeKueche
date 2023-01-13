@@ -13,6 +13,134 @@
         android:theme="@style/Theme.VietnamesicheKüche"
         tools:targetApi="31">
         <activity
+            android:name=".Spezialitaet_Vege_GoiCuonChay_Activity"
+            android:exported="false"
+            android:theme="@style/Theme.VietnamesicheKüche.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Spezialitaet_Vege_ChaGioChay_Activity"
+            android:exported="false"
+            android:theme="@style/Theme.VietnamesicheKüche.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Spezialitaet_ChaGio_Activity"
+            android:exported="false"
+            android:theme="@style/Theme.VietnamesicheKüche.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Spezialitaet_LauHaiSan_Activity"
+            android:exported="false"
+            android:theme="@style/Theme.VietnamesicheKüche.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Spezialitaet_BoKho_Activity"
+            android:exported="false"
+            android:theme="@style/Theme.VietnamesicheKüche.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Spezialitaet_GoiCuon_Activity"
+            android:exported="false"
+            android:theme="@style/Theme.VietnamesicheKüche.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Spezialitaet_BanhXeo_Activity"
+            android:exported="false"
+            android:theme="@style/Theme.VietnamesicheKüche.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Spezialitaet_BanhMiThitHeoNuong_Activity"
+            android:exported="false"
+            android:theme="@style/Theme.VietnamesicheKüche.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Nudeln_Vege_MienChayXao_Activity"
+            android:exported="false"
+            android:theme="@style/Theme.VietnamesicheKüche.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Nudeln_Vege_MienChayRauCu_Activity"
+            android:exported="false"
+            android:theme="@style/Theme.VietnamesicheKüche.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Nudeln_BunThitNuong_Activity"
+            android:exported="false"
+            android:theme="@style/Theme.VietnamesicheKüche.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Nudeln_BunBoHue_Activity"
+            android:exported="false"
+            android:theme="@style/Theme.VietnamesicheKüche.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Nudeln_MiQuang_Activity"
+            android:exported="false"
+            android:theme="@style/Theme.VietnamesicheKüche.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Nudeln_MienGa_Activity"
+            android:exported="false"
+            android:theme="@style/Theme.VietnamesicheKüche.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Nudeln_HuTieuTomThit_Activity"
+            android:exported="false"
+            android:theme="@style/Theme.VietnamesicheKüche.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Nudeln_PhoBo_Activity"
+            android:exported="false"
+            android:theme="@style/Theme.VietnamesicheKüche.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".Search_Filter_Activity"
             android:exported="false"
             android:parentActivityName=".VietnamesichesKueche_Activity">
@@ -30,7 +158,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".Reis_CanhChuaNamChay_Activity"
+            android:name=".Reis_Vege_CanhChuaNamChay_Activity"
             android:exported="false"
             android:parentActivityName=".Reis_Gerichte_Activity"
             android:theme="@style/Theme.VietnamesicheKüche.NoActionBar">
@@ -48,7 +176,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".Reis_DauHuSotCa_Activity"
+            android:name=".Reis_Vege_DauHuSotCa_Activity"
             android:exported="false"
             android:parentActivityName=".Reis_Gerichte_Activity"
             android:theme="@style/Theme.VietnamesicheKüche.NoActionBar">
@@ -84,7 +212,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".Reis_GaKhoSaOt_Activity"
+            android:name=".Reis_GaXaoSaOt_Activity"
             android:exported="false"
             android:parentActivityName=".Reis_Gerichte_Activity"
             android:theme="@style/Theme.VietnamesicheKüche.NoActionBar">
