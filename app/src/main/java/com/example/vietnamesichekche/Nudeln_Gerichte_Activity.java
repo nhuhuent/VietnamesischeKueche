@@ -1,24 +1,34 @@
 package com.example.vietnamesichekche;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 
 public class Nudeln_Gerichte_Activity extends AppCompatActivity {
 
     ImageView phoboImg, hutieutomthitImg, miengaImg, miquangImg, bunbohueImg, bunthitnuongImg,
             mienchayraucuImg, mienchayxaoImg;
-
     ImageView backIcon;
+    Button onlineRecipe;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_nudeln_gerichte);
+
+        onlineRecipe =(Button) findViewById(R.id.nudeln_button);
+        onlineRecipe.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent onlineIntent = new Intent(Nudeln_Gerichte_Activity.this, OnlineRecipes_Activity.class);
+                onlineIntent.putExtra("Nudeln_Gerichte_Activity", 1);
+                startActivity(onlineIntent);
+            }
+        });
 
         // back button
         //getSupportActionBar().setDisplayHomeAsUpEnabled(true); or:

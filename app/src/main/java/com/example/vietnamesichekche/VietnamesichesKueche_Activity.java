@@ -46,7 +46,7 @@ public class VietnamesichesKueche_Activity extends AppCompatActivity {
 
         vegetarischImg =(ImageView) findViewById(R.id.vegetarischImg);
         vegetarischImg.setOnClickListener((View view) -> {
-            Intent vegetarischIntent = new Intent(VietnamesichesKueche_Activity.this, Vegatarisch_Gerichte_Activity.class);
+            Intent vegetarischIntent = new Intent(VietnamesichesKueche_Activity.this, Vegetarisch_Gerichte_Activity.class);
             startActivity(vegetarischIntent);
         });
 
@@ -70,7 +70,7 @@ public class VietnamesichesKueche_Activity extends AppCompatActivity {
 
         vegetarischButton = findViewById(R.id.vegetarischButton);
         vegetarischButton.setOnClickListener((View view) -> {
-            Intent vegetarischIntentButton = new Intent(VietnamesichesKueche_Activity.this, Vegatarisch_Gerichte_Activity.class);
+            Intent vegetarischIntentButton = new Intent(VietnamesichesKueche_Activity.this, Vegetarisch_Gerichte_Activity.class);
             startActivity(vegetarischIntentButton);
         });
     }

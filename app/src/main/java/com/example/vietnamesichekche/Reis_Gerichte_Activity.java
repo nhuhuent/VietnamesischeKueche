@@ -5,19 +5,32 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 
 public class Reis_Gerichte_Activity extends AppCompatActivity {
 
-    ImageView comtamImg, gakhosaotImg, dauhurimtomImg, boluclacImg, comgaluocImg, comchienduongchauImg,
+    ImageView comtamImg, gakhosaotImg, boluclacImg, comgaluocImg, comchienduongchauImg,
     dauhusotcaImg, comvitquayImg, canhchuanamchayImg;
 
     ImageView backIcon;
+
+    Button onlineRecipe;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reis_gerichte);
+
+        onlineRecipe =(Button) findViewById(R.id.onlineButton);
+        onlineRecipe.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent onlineIntent = new Intent(Reis_Gerichte_Activity.this, OnlineRecipes_Activity.class);
+                onlineIntent.putExtra("Reis_Gerichte_Activity", 2);
+                startActivity(onlineIntent);
+            }
+        });
 
         // back button
         //getSupportActionBar().setDisplayHomeAsUpEnabled(true); or:

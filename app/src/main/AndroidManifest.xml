@@ -2,6 +2,15 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <!--import for API to do-->
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.TTS_SERVICE" />
+        </intent>
+    </queries>
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -12,6 +21,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.VietnamesicheKüche"
         tools:targetApi="31">
+        <activity
+            android:name=".OnlineRecipes_Activity"
+            android:exported="false"
+            android:theme="@style/Theme.VietnamesicheKüche.NoActionBar">
+           <meta-data
+              android:name="android.app.lib_name"
+              android:value="" />
+        </activity>
         <activity
             android:name=".Spezialitaet_Vege_GoiCuonChay_Activity"
             android:exported="false"
@@ -203,15 +220,6 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".Reis_DauHuTomRim_Activity"
-            android:exported="false"
-            android:parentActivityName=".Reis_Gerichte_Activity"
-            android:theme="@style/Theme.VietnamesicheKüche.NoActionBar">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
             android:name=".Reis_GaXaoSaOt_Activity"
             android:exported="false"
             android:parentActivityName=".Reis_Gerichte_Activity"
@@ -239,7 +247,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".Vegatarisch_Gerichte_Activity"
+            android:name=".Vegetarisch_Gerichte_Activity"
             android:exported="false"
             android:parentActivityName=".VietnamesichesKueche_Activity"
             android:theme="@style/Theme.VietnamesicheKüche.NoActionBar">

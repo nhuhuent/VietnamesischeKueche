@@ -33,14 +33,14 @@
                 android:src="@drawable/ic_back_24"></ImageView>
 
             <TextView
-                android:id="@+id/reis_comtam_toolbar"
+                android:id="@+id/reis_comgaluoc_toolbar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:layout_marginStart="26dp"
                 android:layout_toEndOf="@id/left_back_icon"
                 android:fontFamily="@font/alice"
-                android:text="@string/reis_comtam_toolbar"
+                android:text="@string/reis_gaxaosaot_toolbar"
                 android:textColor="@color/white"
                 android:textSize="24sp"
                 android:textStyle="bold">
@@ -60,34 +60,24 @@
                     android:orientation="horizontal">
 
                     <ImageView
-                        android:id="@+id/reis_comtam_f1_1"
+                        android:id="@+id/reis_gaxaosaot_f1_1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
                         android:layout_marginBottom="10dp"
                         android:layout_marginRight="8dp"
                         android:layout_marginLeft="8dp"
-                        app:srcCompat="@drawable/reis_comtam_f1_1"></ImageView>
+                        app:srcCompat="@drawable/reis_gaxaosaot_f1_1"></ImageView>
 
                     <ImageView
-                        android:id="@+id/reis_comtam_f2_1"
+                        android:id="@+id/reis_gaxaosaot_f2_1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
                         android:layout_marginBottom="10dp"
                         android:layout_marginRight="8dp"
                         android:layout_marginLeft="8dp"
-                        app:srcCompat="@drawable/reis_comtam_f2_1"></ImageView>
-
-                    <ImageView
-                        android:id="@+id/reis_comtam_f3_1"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
-                        android:layout_marginBottom="10dp"
-                        android:layout_marginRight="8dp"
-                        android:layout_marginLeft="8dp"
-                        app:srcCompat="@drawable/reis_comtam_f3_1"></ImageView>
+                        app:srcCompat="@drawable/reis_gaxaosaot_f2_1"></ImageView>
 
                 </LinearLayout>
             </HorizontalScrollView>
@@ -102,14 +92,14 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/comtam_dauer"
+                    android:id="@+id/gaxaosaot_dauer"
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
                     android:layout_centerVertical="true"
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="16dp"
                     android:fontFamily="@font/alice"
-                    android:text="@string/comtam_dauer"
+                    android:text="@string/gaxaosaot_dauer"
                     android:textColor="@color/white"
                     android:textSize="24sp"
                     android:textStyle="bold"
@@ -119,24 +109,24 @@
                     app:layout_constraintTop_toTopOf="parent"></TextView>
 
                 <TextView
-                    android:id="@+id/comtam_schwierigkeitsgrad"
+                    android:id="@+id/gaxaosaot_schwierigkeitsgrad"
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
                     android:layout_centerVertical="true"
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="8dp"
                     android:fontFamily="@font/alice"
-                    android:text="@string/comtam_schwierigkeitsgrad"
+                    android:text="@string/gaxaosaot_schwierigkeitsgrad"
                     android:textColor="@color/white"
                     android:textSize="24sp"
                     android:textStyle="bold"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/comtam_dauer"></TextView>
+                    app:layout_constraintTop_toBottomOf="@+id/gaxaosaot_dauer"></TextView>
 
                 <TextView
-                    android:id="@+id/comtam_rezept"
+                    android:id="@+id/gaxaosaot_rezept"
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
                     android:layout_centerVertical="true"
@@ -151,11 +141,11 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/comtam_schwierigkeitsgrad"
+                    app:layout_constraintTop_toBottomOf="@+id/gaxaosaot_schwierigkeitsgrad"
                     app:layout_constraintVertical_bias="0.0"></TextView>
 
                 <TextView
-                    android:id="@+id/comtam_zutaten"
+                    android:id="@+id/gaxaosaot_zutaten"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
@@ -167,7 +157,7 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="1.0"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/comtam_rezept"
+                    app:layout_constraintTop_toBottomOf="@+id/gaxaosaot_rezept"
                     app:layout_constraintVertical_bias="0.0"></TextView>
             </LinearLayout>
         </ScrollView>

@@ -25,9 +25,18 @@
     <string name="reis_dauhurimtom">Gebratene Tofu mit Garnele</string>
     <string name="reis_dauhusotca">Tofu in Tomatensauce</string>
     <string name="reis_gakhosaot">Gebratenes Hühnchen mit Zitronengras</string>
-    <string name="reis_weiter">Weiter</string>
+    <string name="online">Online Rezepte</string>
     <string name="dish_name">Gebrochener Reis mit gegrilltem Kotelett</string>
     <string name="reis_comtam">(Cơm Tấm)</string>
+
+    <string name="reis_comtam_toolbar">Cơm Tấm (Gebrochener Reis mit gegrilltem Kotelett)</string>
+    <string name="reis_boluclac_toolbar">Bò lúc lắc (Geschwenktes Rindfleisch)</string>
+    <string name="reis_canhchuanamchay_toolbar">Canh chua nấm chay (Vegetarische Sauersuppe)</string>
+    <string name="reis_comgaluoc_toolbar">Cơm gà luộc (Gekochtes Huhn mit Reis)</string>
+    <string name="reis_comvitquay_toolbar">Cơm Vịt Quay (Grillente mit Reis)</string>
+    <string name="reis_gaxaosaot_toolbar">Gà Xao Sả Ớt (Gebratenes Hühnchen mit Zitronengras)</string>
+    <string name="reis_comchienduongchau_toolbar">Cơm chiên dương châu (Gebratener Reis mit Ei, Garnele und Gemüse)</string>
+    <string name="reis_dauhusotca_toolbar">Đậu hủ sốt cà (Tofu in Tomatensauce)</string>
 
     <string name="nudeln_phobo">Phở Bò (PHỞ Rindernudelsuppe)</string>
     <string name="nudeln_hutieutmthit">Hủ Tiếu Tôm Thịt (Reisbandnudel Suppe mit Schweinefleisch und Garnele)</string>
@@ -55,5 +64,111 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <!---->
+    <string name="phobo_dauer">Dauer: ca. 2 Stunden</string>
+    <string name="phobo_schwierigkeitsgrad">Schwierigkeitsgrad: mittel</string>
+    <string name="phobo_rezept">Rezept:</string>
+
+    <string name="hutieutomthit_dauer">Dauer: ca. 1 Stunden</string>
+    <string name="hutieutomthit_schwierigkeitsgrad">Schwierigkeitsgrad: leicht</string>
+    <string name="hutieutomthit_rezept">Rezept:</string>
+
+    <string name="mienga_dauer">Dauer: ca. 45 Minuten</string>
+    <string name="mienga_schwierigkeitsgrad">Schwierigkeitsgrad: leicht</string>
+    <string name="mienga_rezept">Rezept:</string>
+
+    <string name="miquang_dauer">Dauer: ca. 1 Stunden</string>
+    <string name="miquang_schwierigkeitsgrad">Schwierigkeitsgrad: mittel</string>
+    <string name="miquang_rezept">Rezept:</string>
+
+    <string name="bunbohue_dauer">Dauer: ca. 1,5 Stunden</string>
+    <string name="bunbohue_schwierigkeitsgrad">Schwierigkeitsgrad: mittel</string>
+    <string name="bunbohue_rezept">Rezept:</string>
+
+    <string name="bunthitnuong_dauer">Dauer: ca. 1 Stunden</string>
+    <string name="bunthitnuong_schwierigkeitsgrad">Schwierigkeitsgrad: mittel</string>
+
+    <string name="mienchayraucu_dauer">Dauer: ca. 30 Minuten</string>
+    <string name="mienchayraucu_schwierigkeitsgrad">Schwierigkeitsgrad: leicht</string>
+
+    <string name="mienchayxao_dauer">Dauer: ca. 30 Minuten</string>
+    <string name="mienchayxao_schwierigkeitsgrad">Schwierigkeitsgrad: leicht</string>
+
+    <!---->
+    <string name="comtam_dauer">Dauer: ca. 1,5 Stunden</string>
+    <string name="comtam_schwierigkeitsgrad">Schwierigkeitsgrad: schwierig</string>
+
+    <string name="boluclac_dauer">Dauer: ca. 45 Minuten</string>
+    <string name="boluclac_schwierigkeitsgrad">Schwierigkeitsgrad: leicht</string>
+
+    <string name="canhchuanamchay_dauer">Dauer: ca. 30 Minuten</string>
+    <string name="canhchuanamchay_schwierigkeitsgrad">Schwierigkeitsgrad: leicht</string>
+
+    <string name="comgaluoc_dauer">Dauer: ca. 1 Stunden</string>
+    <string name="comgaluoc_schwierigkeitsgrad">Schwierigkeitsgrad: mittel</string>
+
+    <string name="comvitquay_dauer">Dauer: ca. 2 Stunden</string>
+    <string name="comvitquay_schwierigkeitsgrad">Schwierigkeitsgrad: schwierig</string>
+
+    <string name="gaxaosaot_dauer">Dauer: ca. 45 Minuten</string>
+    <string name="gaxaosaot_schwierigkeitsgrad">Schwierigkeitsgrad: leicht</string>
+
+    <string name="comchienduongchau_dauer">Dauer: ca. 1 Stunden</string>
+    <string name="comchienduongchau_schwierigkeitsgrad">Schwierigkeitsgrad: mittel</string>
+
+    <string name="dauhusotca_dauer">Dauer: ca. 30 Minuten</string>
+    <string name="dauhusotca_schwierigkeitsgrad">Schwierigkeitsgrad: leicht</string>
+
+    <!---->
+    <string name="banhxeo_dauer">Dauer: ca. 1,5 Stunden</string>
+    <string name="banhxeo_schwierigkeitsgrad">Schwierigkeitsgrad: mittel</string>
+
+    <string name="goicuon_dauer">Dauer: ca. 1 Stunden</string>
+    <string name="goicuon_schwierigkeitsgrad">Schwierigkeitsgrad: mittel</string>
+
+    <string name="bokho_dauer">Dauer: ca. 1,5 Stunden</string>
+    <string name="bokho_schwierigkeitsgrad">Schwierigkeitsgrad: leicht</string>
+
+    <string name="lauhaisan_dauer">Dauer: ca. 1 Stunden</string>
+    <string name="lauhaisan_schwierigkeitsgrad">Schwierigkeitsgrad: mittel</string>
+
+    <string name="chagio_dauer">Dauer: ca. 1 Stunden</string>
+    <string name="chagio_schwierigkeitsgrad">Schwierigkeitsgrad: mittel</string>
+
+    <string name="chagiochay_dauer">Dauer: ca. 1 Stunden</string>
+    <string name="chagiochay_schwierigkeitsgrad">Schwierigkeitsgrad: mittel</string>
+
+    <string name="goicuonchay_dauer">Dauer: ca. 45 Minuten</string>
+    <string name="goicuonchay_schwierigkeitsgrad">Schwierigkeitsgrad: leicht</string>
+
+    <string name="banhmithitheonuong_dauer">Dauer: ca. 1 Stunden</string>
+    <string name="banhmithitheonuong_schwierigkeitsgrad">Schwierigkeitsgrad: mittel</string>
+
+    <string name="HorizontalSrollView">scrollen</string>
+    <string name="backbutton">backbutton</string>
+    <string name="btn_texttospeech">Text to speech</string>
+
+    <string name="dauer">Dauer:</string>
+
+    <string name="api_key">4fcfa11a7f4a4b6fbee7449f74f144e7</string>
+    <string name="dishes_name">Dish Name</string>
+    <string name="two_persons">2 Persons</string>
+    <string name="menu">Menu</string>
+    <string name="dessert">Dessert</string>
+
+    <string-array name="tags">
+        <item>appetizer</item>
+        <item>salad</item>
+        <item>main course</item>
+        <item>dessert</item>
+        <item>bread</item>
+        <item>breakfast</item>
+        <item>soup</item>
+        <item>beverage</item>
+        <item>sauce</item>
+        <item>marinade</item>
+        <item>fingerfood</item>
+    </string-array>
 
 </resources>

@@ -6,6 +6,7 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 
 public class Spezialitaet_Gerichte_Activity extends AppCompatActivity {
@@ -14,11 +15,23 @@ public class Spezialitaet_Gerichte_Activity extends AppCompatActivity {
     ImageView banhmithitheonuongImg, banhxeoImg, goicuonImg, bokhoImg, lauhaisanImg, goigaImg, chagiochayImg,
     goicuonchayImg;
 
+    Button onlineRecipe;
+
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_spezialitaet_gerichte);
+
+        onlineRecipe =(Button) findViewById(R.id.spezialitaet_button);
+        onlineRecipe.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent onlineIntent = new Intent(Spezialitaet_Gerichte_Activity.this, OnlineRecipes_Activity.class);
+                onlineIntent.putExtra("Spezialitaet_Gerichte_Activity", 3);
+                startActivity(onlineIntent);
+            }
+        });
 
         backIcon = (ImageView) findViewById(R.id.left_back_icon);
         backIcon.setOnClickListener(new View.OnClickListener() {
