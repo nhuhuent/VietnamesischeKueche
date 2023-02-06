@@ -52,152 +52,153 @@
 
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="540dp">
-        <GridLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_margin="5dp"
-            android:columnCount="2"
-            android:columnOrderPreserved="false"
-            android:rowCount="4">
+            android:layout_height="540dp"
+            android:contentDescription="@string/allgemein_discription">
 
-            <androidx.cardview.widget.CardView
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:layout_margin="10dp"
-                android:layout_marginLeft="30dp"
-                app:cardCornerRadius="15dp"
-                app:cardElevation="5dp">
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="5dp"
+                android:columnCount="2"
+                android:columnOrderPreserved="false"
+                android:rowCount="4">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:orientation="vertical">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginLeft="30dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="5dp">
 
-                    <ImageView
-                        android:id="@+id/bild_mienchayxao"
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        app:srcCompat="@drawable/nudeln_text1_mienchayxao"></ImageView>
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
+                        android:gravity="center"
+                        android:orientation="vertical">
 
-            <androidx.cardview.widget.CardView
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:layout_margin="10dp"
-                android:layout_marginLeft="30dp"
-                app:cardCornerRadius="15dp"
-                app:cardElevation="5dp">
+                        <ImageView
+                            android:id="@+id/bild_mienchayxao"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:srcCompat="@drawable/nudeln_text1_mienchayxao"></ImageView>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:orientation="vertical">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginLeft="30dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="5dp">
 
-                    <ImageView
-                        android:id="@+id/bild_mienchayraucu"
-                        android:layout_width="150dp"
-                        android:layout_height="match_parent"
-                        app:srcCompat="@drawable/nudeln_text1_mienchayraucu"></ImageView>
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:layout_margin="10dp"
-                android:layout_marginLeft="30dp"
-                app:cardCornerRadius="15dp"
-                app:cardElevation="5dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:id="@+id/bild_dauhusotca"
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        app:srcCompat="@drawable/reis_text1_dauhusotca"></ImageView>
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
+                        android:gravity="center"
+                        android:orientation="vertical">
 
-            <androidx.cardview.widget.CardView
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:layout_margin="10dp"
-                android:layout_marginLeft="30dp"
-                app:cardCornerRadius="15dp"
-                app:cardElevation="5dp">
+                        <ImageView
+                            android:id="@+id/bild_mienchayraucu"
+                            android:layout_width="150dp"
+                            android:layout_height="match_parent"
+                            app:srcCompat="@drawable/nudeln_text1_mienchayraucu"></ImageView>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:orientation="vertical">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginLeft="30dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="5dp">
 
-                    <ImageView
-                        android:id="@+id/bild_canhchuanamchay"
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        app:srcCompat="@drawable/reis_text1_canhchuanamchay"></ImageView>
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
+                        android:gravity="center"
+                        android:orientation="vertical">
 
-            <androidx.cardview.widget.CardView
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:layout_margin="10dp"
-                android:layout_marginLeft="30dp"
-                app:cardCornerRadius="15dp"
-                app:cardElevation="5dp">
+                        <ImageView
+                            android:id="@+id/bild_dauhusotca"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:srcCompat="@drawable/reis_text1_dauhusotca"></ImageView>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:orientation="vertical">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginLeft="30dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="5dp">
 
-                    <ImageView
-                        android:id="@+id/bild_chagiochay"
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        app:srcCompat="@drawable/spezialitaet_text1_chagiochay">
-                    </ImageView>
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
+                        android:gravity="center"
+                        android:orientation="vertical">
 
-            <androidx.cardview.widget.CardView
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:layout_margin="10dp"
-                android:layout_marginLeft="30dp"
-                app:cardCornerRadius="15dp"
-                app:cardElevation="5dp">
+                        <ImageView
+                            android:id="@+id/bild_canhchuanamchay"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:srcCompat="@drawable/reis_text1_canhchuanamchay"></ImageView>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:orientation="vertical">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginLeft="30dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="5dp">
 
-                    <ImageView
-                        android:id="@+id/bild_goicuonchay"
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        app:srcCompat="@drawable/spezialitaet_text1_goicuonchay">
+                        android:gravity="center"
+                        android:orientation="vertical">
 
-                    </ImageView>
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
+                        <ImageView
+                            android:id="@+id/bild_chagiochay"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:srcCompat="@drawable/spezialitaet_text1_chagiochay"></ImageView>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
 
-        </GridLayout>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginLeft="30dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/bild_goicuonchay"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:srcCompat="@drawable/spezialitaet_text1_goicuonchay">
+
+                        </ImageView>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </GridLayout>
         </ScrollView>
 
 

@@ -17,6 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/teal_700"
+            android:contentDescription="@string/allgemein_discription"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -29,6 +30,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
+                android:contentDescription="@string/allgemein_discription"
                 android:src="@drawable/ic_back_24">
             </ImageView>
 
@@ -67,8 +69,9 @@
                 <androidx.cardview.widget.CardView
                     android:layout_width="150dp"
                     android:layout_height="150dp"
-                    android:layout_margin="10dp"
-                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="0dp"
                     app:cardCornerRadius="15dp"
                     app:cardElevation="5dp">
 
@@ -82,15 +85,18 @@
                             android:id="@+id/bild_comtam"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            app:srcCompat="@drawable/reis_text1_comtam"></ImageView>
+                            android:contentDescription="@string/allgemein_discription"
+                            app:srcCompat="@drawable/reis_text1_comtam">
+                        </ImageView>
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="150dp"
                     android:layout_height="150dp"
-                    android:layout_margin="10dp"
-                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="0dp"
                     app:cardCornerRadius="15dp"
                     app:cardElevation="5dp">
 
@@ -104,15 +110,18 @@
                             android:id="@+id/bild_boluclac"
                             android:layout_width="150dp"
                             android:layout_height="match_parent"
-                            app:srcCompat="@drawable/reis_text1_boluclac"></ImageView>
+                            android:contentDescription="@string/allgemein_discription"
+                            app:srcCompat="@drawable/reis_text1_boluclac">
+                        </ImageView>
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="150dp"
                     android:layout_height="150dp"
-                    android:layout_margin="10dp"
-                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="0dp"
                     app:cardCornerRadius="15dp"
                     app:cardElevation="5dp">
 
@@ -126,15 +135,18 @@
                             android:id="@+id/bild_canhchuanamchay"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            app:srcCompat="@drawable/reis_text1_canhchuanamchay"></ImageView>
+                            android:contentDescription="@string/allgemein_discription"
+                            app:srcCompat="@drawable/reis_text1_canhchuanamchay">
+                        </ImageView>
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="150dp"
                     android:layout_height="150dp"
-                    android:layout_margin="10dp"
-                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="0dp"
                     app:cardCornerRadius="15dp"
                     app:cardElevation="5dp">
 
@@ -148,15 +160,18 @@
                             android:id="@+id/bild_comgaluoc"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            app:srcCompat="@drawable/reis_text1_comgaluoc"></ImageView>
+                            android:contentDescription="@string/allgemein_discription"
+                            app:srcCompat="@drawable/reis_text1_comgaluoc">
+                        </ImageView>
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="150dp"
                     android:layout_height="150dp"
-                    android:layout_margin="10dp"
-                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="0dp"
                     app:cardCornerRadius="15dp"
                     app:cardElevation="5dp">
 
@@ -170,15 +185,18 @@
                             android:id="@+id/bild_comvitquay"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            app:srcCompat="@drawable/reis_text1_comvitquay"></ImageView>
+                            android:contentDescription="@string/allgemein_discription"
+                            app:srcCompat="@drawable/reis_text1_comvitquay">
+                        </ImageView>
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="150dp"
                     android:layout_height="150dp"
-                    android:layout_margin="10dp"
-                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="0dp"
                     app:cardCornerRadius="15dp"
                     app:cardElevation="5dp">
 
@@ -192,15 +210,18 @@
                             android:id="@+id/bild_gaxaosaot"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            app:srcCompat="@drawable/reis_text1_gaxaosaot"></ImageView>
+                            android:contentDescription="@string/allgemein_discription"
+                            app:srcCompat="@drawable/reis_text1_gaxaosaot">
+                        </ImageView>
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="150dp"
                     android:layout_height="150dp"
-                    android:layout_margin="10dp"
-                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="0dp"
                     app:cardCornerRadius="15dp"
                     app:cardElevation="5dp">
 
@@ -214,15 +235,18 @@
                             android:id="@+id/bild_comchienduongchau"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            app:srcCompat="@drawable/reis_text1_comchienduongchau"></ImageView>
+                            android:contentDescription="@string/allgemein_discription"
+                            app:srcCompat="@drawable/reis_text1_comchienduongchau">
+                        </ImageView>
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="150dp"
                     android:layout_height="150dp"
-                    android:layout_margin="10dp"
-                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="0dp"
                     app:cardCornerRadius="15dp"
                     app:cardElevation="5dp">
 
@@ -236,7 +260,9 @@
                             android:id="@+id/bild_dauhusotca"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            app:srcCompat="@drawable/reis_text1_dauhusotca"></ImageView>
+                            android:contentDescription="@string/allgemein_discription"
+                            app:srcCompat="@drawable/reis_text1_dauhusotca">
+                        </ImageView>
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
             </GridLayout>
@@ -246,8 +272,6 @@
             android:id="@+id/onlineButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_row="0"
-            android:layout_column="0"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
             android:background="@drawable/custom_btn_texttospeech"

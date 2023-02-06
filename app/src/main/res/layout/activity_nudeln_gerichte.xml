@@ -52,187 +52,204 @@
 
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="540dp">
-        <GridLayout
-            android:id="@+id/gridlayout"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:rowCount="4"
-            android:columnCount="2"
-            android:layout_margin="5dp"
-            android:layout_gravity="center_horizontal"
-            android:columnOrderPreserved="false">
+            android:layout_height="540dp"
+            android:contentDescription="@string/allgemein_discription">
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cardview1"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                app:cardCornerRadius="15dp"
-                app:cardElevation="5dp"
-                android:layout_marginLeft="30dp"
-                android:layout_margin="10dp">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:gravity="center">
-                    <ImageView
-                        android:id="@+id/bild_phobo"
+            <GridLayout
+                android:id="@+id/gridlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="5dp"
+                android:columnCount="2"
+                android:columnOrderPreserved="false"
+                android:rowCount="4">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardview1"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginLeft="30dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="5dp">
+
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        app:srcCompat="@drawable/nudeln_text1_phobo">
-                    </ImageView>
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
+                        android:gravity="center"
+                        android:orientation="vertical">
 
-            <androidx.cardview.widget.CardView
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                app:cardCornerRadius="15dp"
-                app:cardElevation="5dp"
-                android:layout_marginLeft="30dp"
-                android:layout_margin="10dp">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:gravity="center">
+                        <ImageView
+                            android:id="@+id/bild_phobo"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:contentDescription="@string/allgemein_discription"
+                            app:srcCompat="@drawable/nudeln_text1_phobo">
+                        </ImageView>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
 
-                    <ImageView
-                        android:id="@+id/bild_hutieutomthit"
-                        android:layout_width="150dp"
-                        android:layout_height="match_parent"
-                        app:srcCompat="@drawable/nudeln_text1_hutieutomthit">
-                    </ImageView>
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginLeft="30dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="5dp">
 
-            <androidx.cardview.widget.CardView
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                app:cardCornerRadius="15dp"
-                app:cardElevation="5dp"
-                android:layout_marginLeft="30dp"
-                android:layout_margin="10dp">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:gravity="center">
-                    <ImageView
-                        android:id="@+id/bild_mienga"
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        app:srcCompat="@drawable/nudeln_text1_mienga">
-                    </ImageView>
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
+                        android:gravity="center"
+                        android:orientation="vertical">
 
-            <androidx.cardview.widget.CardView
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                app:cardCornerRadius="15dp"
-                app:cardElevation="5dp"
-                android:layout_marginLeft="30dp"
-                android:layout_margin="10dp">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:gravity="center">
-                    <ImageView
-                        android:id="@+id/bild_miquang"
+                        <ImageView
+                            android:id="@+id/bild_hutieutomthit"
+                            android:layout_width="150dp"
+                            android:layout_height="match_parent"
+                            app:srcCompat="@drawable/nudeln_text1_hutieutomthit">
+                        </ImageView>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginLeft="30dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="5dp">
+
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        app:srcCompat="@drawable/nudeln_text1_miquang">
-                    </ImageView>
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
+                        android:gravity="center"
+                        android:orientation="vertical">
 
-            <androidx.cardview.widget.CardView
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                app:cardCornerRadius="15dp"
-                app:cardElevation="5dp"
-                android:layout_marginLeft="30dp"
-                android:layout_margin="10dp">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:gravity="center">
-                    <ImageView
-                        android:id="@+id/bild_bunbohue"
+                        <ImageView
+                            android:id="@+id/bild_mienga"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:srcCompat="@drawable/nudeln_text1_mienga">
+                        </ImageView>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginLeft="30dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="5dp">
+
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        app:srcCompat="@drawable/nudeln_text1_bunbohue">
-                    </ImageView>
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
+                        android:gravity="center"
+                        android:orientation="vertical">
 
-            <androidx.cardview.widget.CardView
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                app:cardCornerRadius="15dp"
-                app:cardElevation="5dp"
-                android:layout_marginLeft="30dp"
-                android:layout_margin="10dp">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:gravity="center">
-                    <ImageView
-                        android:id="@+id/bild_buntihtnuong"
+                        <ImageView
+                            android:id="@+id/bild_miquang"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:srcCompat="@drawable/nudeln_text1_miquang">
+                        </ImageView>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginLeft="30dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="5dp">
+
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        app:srcCompat="@drawable/nudeln_text1_bunthitnuong">
-                    </ImageView>
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
+                        android:gravity="center"
+                        android:orientation="vertical">
 
-            <androidx.cardview.widget.CardView
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                app:cardCornerRadius="15dp"
-                app:cardElevation="5dp"
-                android:layout_marginLeft="30dp"
-                android:layout_margin="10dp">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:gravity="center">
-                    <ImageView
-                        android:id="@+id/bild_mienchayraucu"
+                        <ImageView
+                            android:id="@+id/bild_bunbohue"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:srcCompat="@drawable/nudeln_text1_bunbohue">
+                        </ImageView>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginLeft="30dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="5dp">
+
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        app:srcCompat="@drawable/nudeln_text1_mienchayraucu">
-                    </ImageView>
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
+                        android:gravity="center"
+                        android:orientation="vertical">
 
-            <androidx.cardview.widget.CardView
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                app:cardCornerRadius="15dp"
-                app:cardElevation="5dp"
-                android:layout_marginLeft="30dp"
-                android:layout_margin="10dp">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:gravity="center">
-                    <ImageView
-                        android:id="@+id/bild_mienchayxao"
+                        <ImageView
+                            android:id="@+id/bild_buntihtnuong"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:srcCompat="@drawable/nudeln_text1_bunthitnuong">
+                        </ImageView>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginLeft="30dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="5dp">
+
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        app:srcCompat="@drawable/nudeln_text1_mienchayxao">
-                    </ImageView>
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-        </GridLayout>
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/bild_mienchayraucu"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:srcCompat="@drawable/nudeln_text1_mienchayraucu">
+                        </ImageView>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginLeft="30dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/bild_mienchayxao"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:srcCompat="@drawable/nudeln_text1_mienchayxao"></ImageView>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </GridLayout>
         </ScrollView>
 
         <Button

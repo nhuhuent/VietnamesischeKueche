@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name"></string>
+    <string name="allgemein_discription">allgemein_discription</string>
     <string name="button_spezialitaet">Spezialität</string>
     <string name="button_nudeln">Nudeln</string>
     <string name="button_reis">Reis</string>
